@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Απινιδωτές Σάμου</string>
+    <string name="training_notice">ΔΟΚΙΜΑΣΤΙΚΑ ΔΕΔΟΜΕΝΑ</string>
+    <string name="training_details">Η καταχώριση είναι υποθετική. Δεν αποτελεί πραγματική ύπαρξη απινιδωτή.</string>
+    <string name="area_all">Όλες οι περιοχές</string>
+    <string name="area_vathy">Βαθύ</string>
+    <string name="area_karlovasi">Καρλόβασι</string>
+    <string name="area_pythagoreio">Πυθαγόρειο</string>
+    <string name="area_marathokampos">Μαραθόκαμπος</string>
+    <string name="area_label">Περιοχή</string>
+    <string name="show_points">Εμφάνιση</string>
+    <string name="details">Λεπτομέρειες</string>
+    <string name="details_title">Στοιχεία καταχώρισης</string>
+    <string name="back">Επιστροφή</string>
+    <string name="point_count">Καταχωρίσεις: %1$d</string>
+    <string name="empty_results">Δεν υπάρχουν καταχωρίσεις για την επιλεγμένη περιοχή.</string>
+    <string name="map_not_configured">Ο χάρτης χρειάζεται ρύθμιση Google Maps API key. Μπορείτε να εξερευνήσετε τις καταχωρίσεις από τη λίστα.</string>
+    <string name="map_loading">Φόρτωση χάρτη…</string>
+    <string name="map_loading_hint">Αν ο χάρτης παραμένει κενός, ελέγξτε σύνδεση, Google Play services και API key.</string>
+    <string name="no_selection">Πατήστε σε marker για επιλογή σημείου.</string>
+    <string name="field_id">Κωδικός</string>
+    <string name="field_name">Ονομασία</string>
+    <string name="field_area">Περιοχή</string>
+    <string name="field_address">Διεύθυνση / περιγραφή θέσης</string>
+    <string name="field_access">Πληροφορία πρόσβασης</string>
+    <string name="field_latitude">Γεωγραφικό πλάτος</string>
+    <string name="field_longitude">Γεωγραφικό μήκος</string>
+    <string name="missing_point">Δεν βρέθηκε η επιλεγμένη καταχώριση.</string>
+    <string name="sample_name_v1">Υποθετικό σημείο V1</string>
+    <string name="sample_name_v2">Υποθετικό σημείο V2</string>
+    <string name="sample_name_k1">Υποθετικό σημείο K1</string>
+    <string name="sample_name_k2">Υποθετικό σημείο K2</string>
+    <string name="sample_name_p1">Υποθετικό σημείο P1</string>
+    <string name="sample_address">Διεύθυνση παραδείγματος %1$s, χωρίς επιβεβαιωμένη εγκατάσταση.</string>
+    <string name="sample_access">Υποθετική περιγραφή πρόσβασης για το εργαστήριο.</string>
+</resources>
