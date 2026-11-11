@@ -4,13 +4,15 @@
 
 **Όλες οι καταχωρίσεις είναι υποθετικές. Οι γεωγραφικές συντεταγμένες και τα κείμενα δεν αφορούν πραγματικές θέσεις απινιδωτών.**
 
-## Γρήγορη εκτέλεση
+## Διαδικασία εκτέλεσης
 
-1. Αποσυμπιέστε το ZIP σε τοπικό φάκελο με δικαίωμα εγγραφής.  
-2. Στο Android Studio επιλέξτε **Open** και τον φάκελο `SamosAED`, εκεί όπου βρίσκεται το `settings.gradle.kts`. Περιμένετε να ολοκληρωθεί το Gradle Sync.  
-3. Εγκαταστήστε από το SDK Manager το **Android SDK Platform 35**, τα **SDK Build Tools 35.0.0**, τα Platform-Tools και τον Android Emulator, αν λείπουν.  
-4. Επιλέξτε ως Gradle JDK το ενσωματωμένο JDK του συμβατού Android Studio (JDK 17 ή 21). Για AGP 8.9 απαιτείται Android Studio Meerkat ή νεότερο IDE που υποστηρίζει τη συγκεκριμένη έκδοση plugin. Μην αποδεχθείτε αυτόματη αναβάθμιση των εκδόσεων στην φάση της 1ης εκτέλεσης.  
-5. Στο **Device Manager** δημιουργήστε ένα Phone AVD με εικόνα **API 35 και Google APIs ή Google Play**. Επιλέξτε εικόνα κατάλληλη για την αρχιτεκτονική του υπολογιστή σας. Ξεκινήστε την εικονική συσκευή.  
+Προαπαιτούμενο είναι η ύπαρξη [Git](https://git-scm.com/).
+
+1. Κλωνοποιήστε (Clone) το παρόν αποθετήριο είτε μέσα από το Android Studio, είτε μέσω τερματικού.
+2. Στο Android Studio επιλέξτε **Open** και τον φάκελο `SamosAED`, εκεί όπου βρίσκεται το `settings.gradle.kts`. Αναμένετε ώστε να ολοκληρωθεί το Gradle Sync.
+3. Εγκαταστήστε από το SDK Manager το **Android SDK Platform 35**, τα **SDK Build Tools 35.0.0**, τα Platform-Tools και τον Android Emulator, αν λείπουν.
+4. Επιλέξτε ως Gradle JDK το ενσωματωμένο JDK του συμβατού Android Studio (JDK 17 ή 21). Για AGP 8.9 απαιτείται Android Studio Meerkat ή νεότερο IDE που υποστηρίζει τη συγκεκριμένη έκδοση plugin. Μην αποδεχθείτε αυτόματη αναβάθμιση των εκδόσεων στην φάση της 1ης εκτέλεσης.
+5. Στο **Device Manager** δημιουργήστε ένα Phone AVD με εικόνα **API 35 και Google APIs ή Google Play**. Επιλέξτε εικόνα κατάλληλη για την αρχιτεκτονική του υπολογιστή σας. Ξεκινήστε την εικονική συσκευή.
 6. Επιλέξτε το module `app`, την εικονική συσκευή και **Run**.
 
 **Χωρίς Maps API key:** το project μεταγλωττίζεται και η εφαρμογή εκτελείται. Στη θέση του χάρτη εμφανίζεται σχετικό μήνυμα. Το φίλτρο, η λίστα, οι λεπτομέρειες, ο κύκλος ζωής και το Logcat λειτουργούν ανεξάρτητα από το κλειδί.
@@ -118,21 +120,21 @@
 
 ## Αντιμετώπιση συνηθισμένων προβλημάτων
 
-- **Αποτυχία Sync/build:** κοιτάξτε το πρώτο σχετικό μήνυμα του Gradle, ελέγξτε σύνδεση, Gradle JDK και εγκατάσταση Platform 35 / Build Tools 35.0.0.  
-- **Ο emulator δεν ξεκινά:** ελέγξτε συμβατή αρχιτεκτονική εικόνας, υποστήριξη virtualization και διαθέσιμους πόρους. Μπορείτε να χρησιμοποιήσετε φυσική συσκευή με ενεργοποιημένο USB debugging και εξουσιοδότηση του υπολογιστή.  
-- **Μήνυμα για API key:** το `secrets.properties` λείπει ή είναι κενό. Προσθέστε το κλειδί, κάντε Sync και νέο Run.  
-- **Κενός χάρτης παρότι υπάρχει κλειδί:** ελέγξτε ενεργοποίηση SDK/billing, περιορισμούς package και SHA-1, δίκτυο και Google Play services. Δείτε στο Logcat και μηνύματα του Google Maps SDK με το φίλτρο `package:mine`.  
+- **Αποτυχία Sync/build:** κοιτάξτε το πρώτο σχετικό μήνυμα του Gradle, ελέγξτε σύνδεση, Gradle JDK και εγκατάσταση Platform 35 / Build Tools 35.0.0.
+- **Ο emulator δεν ξεκινά:** ελέγξτε συμβατή αρχιτεκτονική εικόνας, υποστήριξη virtualization και διαθέσιμους πόρους. Μπορείτε να χρησιμοποιήσετε φυσική συσκευή με ενεργοποιημένο USB debugging και εξουσιοδότηση του υπολογιστή.
+- **Μήνυμα για API key:** το `secrets.properties` λείπει ή είναι κενό. Προσθέστε το κλειδί, κάντε Sync και νέο Run.
+- **Κενός χάρτης παρότι υπάρχει κλειδί:** ελέγξτε ενεργοποίηση SDK/billing, περιορισμούς package και SHA-1, δίκτυο και Google Play services. Δείτε στο Logcat και μηνύματα του Google Maps SDK με το φίλτρο `package:mine`.
 - **Δεν εμφανίζεται stack trace:** αφαιρέστε το φίλτρο `tag:AED_LIFECYCLE` ή `tag:AED_ACTION` και χρησιμοποιήστε `package:mine is:crash`.
 
 ## Επίσημη τεκμηρίωση
 
-- [Android Studio projects](https://developer.android.com/studio/projects)  
-- [Δημιουργία AVD](https://developer.android.com/studio/run/managing-avds)  
-- [Activity lifecycle](https://developer.android.com/guide/components/activities/activity-lifecycle)  
-- [Back stack](https://developer.android.com/guide/components/activities/tasks-and-back-stack)  
-- [Logcat](https://developer.android.com/studio/debug/logcat)  
-- [Debugging](https://developer.android.com/studio/debug)  
-- [Maps Compose](https://developers.google.com/maps/documentation/android-sdk/maps-compose)  
+- [Android Studio projects](https://developer.android.com/studio/projects)
+- [Δημιουργία AVD](https://developer.android.com/studio/run/managing-avds)
+- [Activity lifecycle](https://developer.android.com/guide/components/activities/activity-lifecycle)
+- [Back stack](https://developer.android.com/guide/components/activities/tasks-and-back-stack)
+- [Logcat](https://developer.android.com/studio/debug/logcat)
+- [Debugging](https://developer.android.com/studio/debug)
+- [Maps Compose](https://developers.google.com/maps/documentation/android-sdk/maps-compose)
 - [API key και περιορισμοί](https://developers.google.com/maps/documentation/android-sdk/get-api-key)
 
 &nbsp;
